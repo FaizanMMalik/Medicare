@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Medicare</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<style>
+    .container {
+        max-width: 100%;
+    }
+</style>
+<style>
+    footer {
+        background: #0f0f0f;
+        padding: 30px 0 10px;
+        font-size: 14px;
+        color: #888;
+    }
+</style>
+<style>
+    footer .container {
+        display: block;
+        position: relative;
+    }
+</style>
+<style>
+    footer .container .row {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+    }
+</style>
+<style>
+    footer .container .row .logo-holder figure {
+        margin: 0 0 20px;
+    }
+</style>
+<style>
+    footer .container .row .logo-holder figure img {
+        margin-bottom: 15px;
+        filter: brightness(0) invert(1);
+        max-width: 300px;
+    }
+</style>
+@* tp review section *@
+<style>
+    .tp-review-section {
+        background-color: #05386b;
+        padding: 4rem 0;
+        width: 100%;
+        max-width: 100%;
+    }
+</style>
+<style>
+    .tp-review-section .container .row .title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+</style>
+<style>
+    .tp-review-section .container .row .title h1 {
+        color: #fff;
+        margin: 1rem 0;
+        text-transform: capitalize;
+        font-size: 2rem;
+        line-height: 1.375;
+        text-align: center;
+    }
+</style>
+<style>
+    .tp-review-section .container .row .title p.description {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: 3rem;
+    }
+</style>
+
+<style>
+    .tp-review-section .container .row .logo-section {
+        text-align: center;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+</style>
+<style>
+    .tp-review-section .container .row .logo-section h4 {
+        font-size: 24px;
+        margin-top: 0;
+        color: #fff;
+    }
+</style>
+<style>
+    .tp-review-section .container .row .logo-section img {
+        height: 30px;
+    }
+</style>
+<style>
+    p {
+        margin: 0 0 15px;
+    }
+</style>
+<style>
+    .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+    }
+</style>
+
+<style>
+    .tp-review-section .container .row .testionial_holder .review h3 {
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #fff;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+</style>
+
+
+<body>
+  
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo-holder">
+                    <figure class="footer-logo text-center"> <img src="//seniorassistant.co/lp/assets/img/logo.png" alt=""> </figure>
+                </div>
+            </div>
+        </div>
+    
+
+    @RenderBody()
+
+    <div class="tp-review-section">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h1>What our customers are saying</h1>
+                    <p class="description">Here's what some of our thousands of customers over the years have to say!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="logo-section">
+                    <h4>Excellent</h4>
+                    <img src="//seniorassistant.co/lp/assets/img/tp_rating.png" class="img-fluid" alt="">
+                    <p>Based on <span>786 reviews</span></p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo-holder">
+                    <figure class="footer-logo text-center"> <img src="//seniorassistant.co/lp/assets/img/logo.png" alt=""> </figure>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <small>Seniorassistant.co is not an insurance or operating company but connects individuals with insurance providers and other affiliates. Plans are insured or covered by a Medicare Advantage organization with a Medicare contract and/or a Medicare-approved Part D sponsor.</small>
+                <small>Enrollment in the plan depends on the plan’s contract renewal with Medicare. Possible options include, but are not limited to Major Medical Plans, Short Term Plans, Christian Health Plans, Health Sharing Plans, discount cards and Fixed Indemnity Plans.</small>
+                <small>Descriptions are for informational purposes only and subject to change. Seniorassistant.co is not affiliated with any insurance plan nor does it represent or endorse any plan. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1–800 MEDICARE to get information on all of your options.</small>
+                <small>By using this site, you acknowledge that you have read and agree to the <a href="//seniorassitant.co/terms.html">Terms and Conditions</a>, and <a href="//seniorassitant.co/privacy.html">Privacy Policy</a>. Not affiliated with the U. S. government or federal Medicare program. A licensed agent may contact you regarding this insurance-related information.</small>
+                <small>© Senior assistant 2022.</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
